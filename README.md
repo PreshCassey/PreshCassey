@@ -3,7 +3,7 @@
 - 🌱 I’m currently improving my skills on Web3.0 Development
 - 💬 Ask me about anything Vue, Angular and Java
 - 💞️
-- 📫 How to reach me <a herf="mailto:preciouscasmir04@gmail.com"></a>...
+- 📫 How to reach me <a href="mailto:preciouscasmir04@gmail.com"></a>...
 - ⚡ Fun fact I am a girl
 
 
