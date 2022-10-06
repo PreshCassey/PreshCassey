@@ -1,5 +1,5 @@
 <h1>I'm Precious Amarachi Casmir</h1>
-=======
+
 - 👋 Hi, I’m @PreshCassey
 - 👀 I’m interested in frontend development...
 - 🌱 I’m currently improving my skills on Web3.0 Development
