@@ -4,8 +4,7 @@
 - 👀 I’m interested in frontend development...
 - 🌱 I’m currently improving my skills on Web3.0 Development
 - 💬 Ask me about anything Vue, Angular and Java
-- 💞️
-- 📫 How to reach me :preciouscasmir04@gmail.com
+- 📫 How to reach me <a href="mailto:preciouscasmir04@gmail.com">preciouscasmir04@gmail.com</a>
 - ⚡ Fun fact I am a girl
 
 
