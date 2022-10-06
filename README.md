@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+<h1>I'm Precious Amarachi Casmir</h1>
 =======
 - 👋 Hi, I’m @PreshCassey
 - 👀 I’m interested in frontend development...
