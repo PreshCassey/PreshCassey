@@ -1,0 +1,162 @@
+.primary-color{
+    color: #8a2be2 !important;
+    content: '\e39b';
+}
+.primary{
+    background-color: #8a2be2;
+}
+.navbar-brand {
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    color: black;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    .navbar-brand:hover, :focus{
+        color: #000 !important;
+    }
+
+.nav-link:hover, :focus{
+    color: blueviolet !important;
+    text-decoration: underline;
+
+}
+ .nav-link {
+    font-size: 14px;
+ }
+ .nav-item > .nav-link{
+     margin-right: 50px;
+ }
+ .navbar-nav{
+     float: right;
+ }
+
+
+.active {
+   color: #8a2be2 !important;
+    background: transparent;
+    background: none;
+    text-decoration: underline;
+    margin-left: 330px;
+}
+.navbar-nav > {
+    display: inline-block;
+    border-radius: 0px;
+    padding-right: 300!important;
+}
+.btn-main{
+
+    background: blueviolet !important;
+    border-radius: 25px !important;   
+    cursor: pointer; 
+    text-align: center;
+    color: #fff !important;
+}
+.btn-light:hover{
+    opacity: 1;
+}
+.btn-light{
+    outline-color: #8a2be2;
+    outline-style: auto;
+    border-radius: 25px !important;    
+    cursor: pointer;
+    color: #8a2be2 !important;
+    text-align: center;
+    opacity: 0.6;
+    transition: 0.3s;
+
+
+}
+
+.subheading{
+    color: #8a2be2;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+span.primary-color{
+    text-align: center !important;
+
+}
+.img-about{
+    width: 100%;
+    z-index: 0;
+    position: relative;
+}
+
+
+ul.about-info{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+li{
+        list-style: none;
+        margin-bottom: 10px;
+}
+
+.icon{
+    color: #8a2be2 !important;
+}
+
+span.icon{
+    color: #000;
+    font-size: 18px;
+}
+
+.text{
+    font-weight: 600;
+    color: #000;
+}
+/* 
+.fa-twitter:hover{
+color: skyblue;
+}
+
+.fa-facebook:hover{
+color: darkblue;
+} 
+.fa-linkedin:hover{
+    color: lightskyblue;
+}
+*/
+
+.fao {
+    padding: 20px;
+    font-size: 30px;
+    width: 85px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  .g{
+    background: darkgray;
+    color: black;
+}
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  
+  
+
+@media screen and (max-width: 580px) {
+   
+  }
