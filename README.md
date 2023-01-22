@@ -4,7 +4,7 @@
 - 👀 I’m interested in frontend development...
 - 🌱 I’m currently improving my skills on Web3.0 Development
 - 👨‍💻 All of my projects are available at <a href="https://preshcassey.github.io/PreshCassey/">https://preshcassey.github.io/PreshCassey/</a>
-- 💬 Ask me about anything Vue, Angular and Java
+- 💬 Ask me about anything relating to frontend Dev.
 - 📫 How to reach me <a href="mailto:preciouscasmir04@gmail.com">preciouscasmir04@gmail.com</a>
 - ⚡ Fun fact I am a girl
 
