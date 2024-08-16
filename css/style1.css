@@ -1,0 +1,56 @@
+.work-section{
+    background-color: #f8e9f7;
+}
+.profile-section {
+    background-color: thistle;
+    background-image: url(/images/bgpurple.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 60px 0;
+}
+.profile-image {
+    border: 5px solid #E0970C;
+    border-radius: 10px;
+}
+.highlight {
+    color: #E0970C;
+    font-weight: bold;
+}
+.bg-custom {
+    border-radius: 0 10px 10px 0;
+    padding: 10px;
+}
+.details {
+    margin-top: 40px;
+}
+.custom-navbar {
+    background-color: #f1ddf1;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #970C98 !important;
+}
+.nav-link {
+    color: #E0970C !important;
+}
+
+.skills-container>.skill-btn {
+    margin: 9px;
+    background-color:  #f1ddf1;
+}
+.skills-container>.skill-btn:hover {
+    margin: 5px;
+    background-color: thistle
+}
+ a.btn-contact{
+    background-color: #970C98;
+    border-color: #970C98;
+  }
+
+  a.btn-contact:hover {
+    background-color: #E0970C;
+    border-color: #E0970C;
+  }
