@@ -2,8 +2,8 @@
     background-color: #f8e9f7;
 }
 .profile-section {
-    background-color: thistle;
-    background-image: URL(/images/bgpurple.svg);
+    background-color: #d8bfd8;
+    background-image: URL("/images/bgpurple.svg");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 60px 0;
