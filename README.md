@@ -6,7 +6,6 @@
 - 👨‍💻 All of my projects are available at <a href="https://preshcassey.github.io/PreshCassey/">https://preshcassey.github.io/PreshCassey/</a>
 - 💬 Ask me about anything relating to frontend Dev.
 - 📫 How to reach me <a href="mailto:preciouscasmir04@gmail.com">preciouscasmir04@gmail.com</a>
-- ⚡ Fun fact I am a girl
 
 
 <!---
