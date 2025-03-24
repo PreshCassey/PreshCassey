@@ -48,25 +48,100 @@
         <div class="row mt-4">
             
             <!-- Graphics Design -->
-            <div class="col-md-4">
-                <div class="card portfolio-card p-3">
-                    <img src="images/works/1.jpg" class="portfolio-img" alt="Graphics Design 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Graphics Design</h5>
-                        <p class="card-text">Event posters and branding.</p>
+                <style>
+                    .gallery-img {
+                        width: 100%;
+                        height: 180px;
+                        object-fit: cover;
+                        border-radius: 5px;
+                        transition: transform 0.3s ease-in-out;
+                    }
+            
+                    .gallery-img:hover {
+                        transform: scale(1.1);
+                    }
+            
+                    .modal-content img {
+                        width: 100%;
+                        border-radius: 5px;
+                    }
+                </style>
+    
+              <h1>Graphic designs</h1>
+                <!-- Gallery Images -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <img src="images/works/1.jpg" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal1">
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <img src="images/works/2.jpg" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal2">
+                </div>
+                <!-- Placeholder images for now -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <img src="https://via.placeholder.com/300x180?text=Image+3" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal3">
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <img src="https://via.placeholder.com/300x180?text=Image+4" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal4">
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <img src="https://via.placeholder.com/300x180?text=Image+5" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal5">
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <img src="https://via.placeholder.com/300x180?text=Image+6" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal6">
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <img src="https://via.placeholder.com/300x180?text=Image+7" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal7">
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <img src="https://via.placeholder.com/300x180?text=Image+8" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal8">
+                </div>
+            
+            
+                <!-- Image Modal -->
+                <div class="modal fade" id="imageModal1" tabindex="-1">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Image Preview</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body text-center">
+                                <img src="images/works/1.jpg">
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            
+                <div class="modal fade" id="imageModal2" tabindex="-1">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Image Preview</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body text-center">
+                                <img src="images/works/2.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Placeholder modals for remaining images -->
+                <div class="modal fade" id="imageModal3" tabindex="-1">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Image Preview</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body text-center">
+                                <img src="https://via.placeholder.com/600x400?text=Image+3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
 
-            <div class="col-md-4">
-                <div class="card portfolio-card p-3">
-                    <img src="images/works/2.jpg" class="portfolio-img" alt="Graphics Design 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Graphics Design</h5>
-                        <p class="card-text">More branding materials.</p>
-                    </div>
-                </div>
-            </div>
+     
 
             <!-- Web Design & Development -->
             <div class="col-md-4">
