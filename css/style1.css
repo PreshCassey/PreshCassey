@@ -178,10 +178,3 @@ body {
     footer a:hover {
       text-decoration: underline;
     }
-
-       /* Typewriter heading */
-    #typewriter {
-      font-size: 2rem;
-      font-weight: bold;
-      color: #2EAF7D;
-    }
