@@ -4,264 +4,346 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PRECIOUS AMARACHI CASMIR</title>
-  <link rel="stylesheet" href="./css/style1.css">
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
-  <style>
-
-/* Animated Hero Background with Brightscout Colors */
-.hero-section {
-  min-height: 100vh;
-  background: linear-gradient(-45deg, #C1F6ED, #02353C, #449342, #2EAF7D, #3FD0C9);
-  background-size: 400% 400%;
-  animation: gradientShift 18s ease infinite;
-  display: flex;
-  align-items: center;
-  color: white;
-padding-top: 120px; /* Adjust so text clears navbar */
-  flex-direction: column;
-  justify-content: center;
-}
-/* Typewriter container responsiveness */
-.typewriter-container {
-  font-size: 2rem;
-  white-space: normal; /* Allows wrapping */
-  word-break: break-word;
-  padding: 0 15px; /* Safe space on mobile */
-}
-
-/* Smaller screens adjustments */
-@media (max-width: 768px) {
-  .typewriter-container {
-    font-size: 1.5rem;
-    line-height: 1.4;
-  }
-}
-
-
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-/* Role Text Colors */
-.highlight-role-0 { color: #ffd54f; } /* Teal green */
-.highlight-role-1 { color: #3FD0C9; } /* Aqua */
-.highlight-role-2 { color: #1c4e1a; } /* Forest green */
-
-  </style>
 </head>
 <body>
-<!-- Navbar -->
-<nav class="navbar navbar-expand-sm mb-5 fixed-top mt-0 px-0 custom-navbar">
-  <div class="container-fluid">
-    <a class="navbar-brand fw-bold logo-text text-white" href="index.html"><img src="./images/logo.png" alt="" srcset="" width="100" height="100"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto fw-bold">
-        <li class="nav-item"><a class="nav-link" href="#about-section">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#work-section">Work</a></li>
-        <li class="nav-item"><a class="nav-link" href="https://casseyp889930254.wordpress.com/">Shelf</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact-section">Contact</a></li>
-        <li class="nav-item"><a class="nav-link" target="_blank" href="./others/Precious_Amarachi_Casmir_Resume.pdf">Resume</a></li>
-
-      </ul>
-      <a href="#contact-section" class="btn btn-nav ms-lg-3">Hire Me</a>
-    </div>
-  </div>
-</nav>
-
-        
-<!-- Hero Section -->
-<section class="hero-section" id="profile-section">
-  <div class="container mt-sm-5">
-    <div class="row align-items-center">
-      <div class="col-lg-7 animate__animated animate__fadeInLeft">
-        <small class="fs-5 text-uppercase fw-bold">I'm PRECIOUS AMARACHI CASMIR</small>
-        <div class="typewriter-container">
-            <h1 class="display-3 fw-bold highlight">
-            <span id="typewriter"></span>
-            </h1>
+  <style>
+       .btn-outline{border:2px solid var(--teal-300);color:var(--teal-700);background:transparent}
+    .btn-brand{background:var(--accent);color:white}
+  </style>
+  <!-- NAV -->
+  <header class="site-nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#">
+        <img src="./images/logo.png" alt="logo" class="brand-img">
+        <div class="brand-text">
+          <div class="name">Precious Amarachi</div>
+          <div class="sub">Frontend Developer • Designer</div>
         </div>
-        <p class="lead mt-4">
-            I specialize in developing visually appealing, responsive, and user-friendly websites. My expertise i
-            ncludes working with modern frameworks like Angular, optimizing performance, and ensuring 
-            cross-browser compatibility.
-        </p>
-        <a href="#contact-section" class="btn btn-contact text-white px-4 py-2 mt-3">Hire Me</a>
-      </div>
-      <div class="col-lg-5 text-center animate__animated animate__fadeInRight">
-        <img src="./images/bg_1.jpg" alt="Profile Picture" class="img-fluid profile-image">
-      </div>
-    </div>
-  </div>
-</section>
+      </a>
 
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="work.html">Projects</a>
+        <a href="https://casseyp889930254.wordpress.com/" target="_blank">Shelf</a>
+        <a href="#contact">Contact</a>
+        <button class="btn btn-brand" id="resumeBtn">Resume</button>
+      </nav>
 
-<!-- About Section -->
-<section class="bg-light py-5" id="about-section">
-  <div class="container" data-aos="fade-up">
-    <div class="text-center">
-      <h1 class="highlight">About Me</h1>
-      <p class="lh-lg">Here you will find more information about me, what I do, and my skills.</p>
+      <button class="mobile-toggle" id="mobileToggle"><i class="fas fa-bars"></i></button>
     </div>
-    <div class="row mt-5">
-      <div class="col-md-8" data-aos="fade-right">
-        <h2>Get to know me!</h2>
-        <p class="lh-lg">
-        I'm a <strong>Frontend Focused Web Developer</strong> building and managing the Front-end of Websites and Web Applications 
-        that leads to the success of the overall product. Check out some of my work in the <strong>Projects</strong> section.
-        </p>
-        <p class="lh-lg">
-        I also like sharing content related to the stuff that I have learned over the years in <strong>Web Development</strong> so it can help other people of the Dev Community. Feel free to Connect or Follow me on my <a href="linkedin.com/in/precious-casmir" class="text-decoration-none">Linkedin</a> and <a href="instagram.com/cassey.presh" class="text-decoration-none">Instagram</a> where I post useful content related to Web Development and Programming.
-        </p>
-        <p class="lh-lg">
-        I'm open to <strong>Job</strong> opportunities where I can contribute, learn and 
-        grow. If you have a good opportunity that matches my skills and experience then don't 
-        hesitate to <a href="#" class="text-decoration-none">contact me</a>.
-        </p>
-        <a href="#contact-section" class="btn btn-contact px-5 py-2 text-white">Contact</a>
-      </div>
-      <div class="col-md-4" data-aos="fade-left">
-        <h3>My Skills</h3>
-        <div>
-            <button class="btn skill-btn">HTML</button>
-            <button class="btn skill-btn">CSS</button>
-            <button class="btn skill-btn">JavaScript</button>
-            <button class="btn skill-btn">Angular</button>
-            <button class="btn skill-btn">Wordpress</button>
-            <button class="btn skill-btn">PHP</button>
-            <button class="btn skill-btn">Team Collaboration</button>
-            <button class="btn skill-btn">GIT/Github</button>
-            <button class="btn skill-btn">Graphic Design</button>
-            <button class="btn skill-btn">Responsive Design</button>
-            <button class="btn skill-btn">Terminal</button>
+  </header>
+
+  <main>
+        <div class="hero wrap" id="home">
+            <div class="hero-left reveal" data-reveal>
+                <span class="eyebrow">Hello, I'm Precious</span>
+                <h2 class="hero-title">I build delightful interfaces <span class="typewriter" id="tw"></span></h2>
+                <p class="lead">Frontend-focused web developer & designer. I craft responsive, accessible interfaces and write about what I learn. I’m available for freelance projects and full-time roles.</p>
+
+                <div class="hero-actions">
+                <a class="btn btn-brand" href="#contact">Hire me</a>
+                <a class="btn btn-outline" href="./others/Precious_Amarachi_Casmir_Resume.pdf" target="_blank">Resume</a>
+                </div>
+
+                <div style="margin-top:18px;display:flex;gap:12px;align-items:center">
+                <a href="https://linkedin.com/in/precious-casmir" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin fa-lg" style="color:var(--teal-700)"></i></a>
+                <a href="https://x.com/_casseyp" target="_blank" aria-label="Twitter/X"><i class="fab fa-x-twitter fa-lg" style="color:var(--teal-700)"></i></a>
+                <a href="https://casseyp889930254.wordpress.com/" target="_blank" aria-label="Blog"><i class="fas fa-book fa-lg" style="color:var(--teal-700)"></i></a>
+                </div>
+            </div>
+
+            <aside class="hero-right reveal" data-reveal>
+                <div class="profile-card">
+                <!-- Replace image with your portrait -->
+                <img src="./images/bg_1.png" alt="Precious Amarachi — portrait" class="profile-img">
+                <div style="margin-top:12px;font-weight:800">Precious Amarachi</div>
+                <div style="color:var(--muted);font-size:13px">Frontend Developer · WordPress · Designer</div>
+                <div class="badge">Available for work</div>
+                </div>
+            </aside>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- Work Section -->
-<section class="py-5" id="work-section" style="background: #fefefe;">
-  <div class="container" data-aos="zoom-in">
-    <div class="row">
-      <div class="col-md-6 text-center p-4 border-end">
-        <h2>I build & design stuff</h2>
-        <p>Elegant websites with impactful design.</p>
-        <a href="work.html" class="btn btn-contact text-white px-4 py-2">See my works</a>
-      </div>
-      <div class="col-md-6 text-center p-4 border-start">
-        <h2>I write</h2>
-        <p>Exploring ideas and sharing knowledge through words.</p>
-        <a href="https://casseyp889930254.wordpress.com/" class="btn btn-contact text-white px-4 py-2">Read my articles</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact-section" class="bg-light py-5">
-  <div class="container" data-aos="fade-up">
-    <div class="row">
-      <div class="col-md-8">
-            <h5>Send me a message!</h5>
-            <p>Have a project or question? Let's talk!</p>
-            <a href="mailto:preciouscasmir04@gmail.com" class="btn btn-contact text-white"><i class="fa fa-envelope"></i> Email Me</a>
-            <br><p>Scan the QR code to send me a message on WhatsApp.</p>
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wa.me/+2348173406858" alt="QR Code" class="mt-3">
-            <p class="mt-2"><small>Or click <a target="_blank" href="https://wa.me/+2348173406858">here</a> to message me directly.</small></p>
-     </div>
-      <div class="col-md-4">
-        <h5>Connect with me</h5>
-        <div class="d-flex gap-3 mt-3">
-          <a href="https://x.com/_casseyp" class="btn btn-dark"><i class="fab fa-x-twitter"></i></a>
-          <a href="https://linkedin.com/in/precious-casmir" class="btn btn-primary"><i class="fab fa-linkedin"></i></a>
-          <a href="https://facebook.com/preshcassey" class="btn btn-primary"><i class="fab fa-facebook"></i></a>
+        <section id="about" class="wrap reveal" data-reveal>
+        <div class="section-head">
+            <h3>About</h3>
+            <div class="muted">A short story of who I am</div>
         </div>
-            <br><p>You can leave a message or feedback on this Google Doc:</p>
-            <a href="https://docs.google.com/document/d/1cc4G9CTpVtiYA7sRpI34gUn1zZG8dOra55CL8avyDwA/edit?usp=sharing" target="_blank" class="btn btn-contact text-white">
-            <i class="fa fa-file-text-o" aria-hidden="true"> Open Google Doc</i> 
+        <div style="display:grid;grid-template-columns:1fr 340px;gap:20px">
+            <div>
+            <p>I’m Precious — a frontend-focused web developer who loves beautiful interfaces, clean code, and writing to explain what I learn. I combine design sensitivity with technical skills to build websites that feel calm, fast, and accessible.</p>
+            <p>I enjoy mentoring junior devs, writing thoughtful posts, and building projects that solve real problems. My core strengths include HTML, CSS, JavaScript, responsive UI, and WordPress site builds.</p>
+            </div>
+            <div style="background:linear-gradient(180deg,#ffffff,#fbfffc);padding:16px;border-radius:12px;border:1px solid rgba(15,20,36,0.04)">
+            <h4 style="margin-top:0">Quick facts</h4>
+            <ul style="padding-left:18px;margin:8px 0;color:var(--muted)">
+                <li>Based in Nigeria</li>
+                <li>Open to remote & freelance work</li>
+                <li>Writes about dev + faith on her blog</li>
+            </ul>
+            <a href="#contact" class="btn btn-brand" style="display:inline-block;margin-top:8px">Let's talk</a>
+            </div>
+        </div>
+        </section>
+
+        <section id="skills" class="wrap reveal" data-reveal>
+        <div class="section-head">
+            <h3>Skills</h3>
+            <div class="muted">Tools & experience</div>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill">
+            <h4>HTML/CSS/Bootstrap</h4>
+            <div class="bar"><i data-width="95%"></i></div>
+            </div>
+
+            <div class="skill">
+            <h4>PHP / Web development</h4>
+            <div class="bar"><i data-width="92%"></i></div>
+            </div>
+
+            <div class="skill">
+            <h4>JavaScript (Vanilla & DOM)</h4>
+            <div class="bar"><i data-width="86%"></i></div>
+            </div>
+
+            <div class="skill">
+            <h4>WordPress / Theme Builds</h4>
+            <div class="bar"><i data-width="82%"></i></div>
+            </div>
+
+            <div class="skill">
+            <h4>Design & Figma / Graphics</h4>
+            <div class="bar"><i data-width="78%"></i></div>
+            </div>
+
+            <div class="skill">
+            <h4>Git / Collaboration</h4>
+            <div class="bar"><i data-width="84%"></i></div>
+            </div>
+        </div>
+        </section>
+
+        <section id="projects" class="wrap reveal" data-reveal>
+        <div class="section-head">
+            <h3>Projects</h3>
+            <div class="muted">A selection of recent work</div>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Project card (duplicate and customize) -->
+            <article class="project">
+            <img src="./images/votcas.jpg" alt="Project screenshot">
+            <div>
+                <h4 style="margin:0">VOTCAS — Electronic Voting System</h4>
+                <p class="muted" style="margin:6px 0 0">Frontend + backend integration; secure session-based voting UI.</p>
+            </div>
+            <div style="margin-top:auto;display:flex;justify-content:space-between;align-items:center">
+                <div class="tags"><span class="tag">HTML</span><span class="tag">PHP</span><span class="tag">MySQL</span></div>
+                <div style="display:flex;gap:8px">
+                <a class="btn btn-outline" href="#" target="_blank">Live</a>
+                <a class="btn btn-outline" href="https://github.com/PreshCassey/votcas" target="_blank">Code</a>
+                </div>
+            </div>
+            </article>
+
+            <article class="project">
+            <img src="./images/alumex.png" alt="Project screenshot">
+            <div>
+                <h4 style="margin:0">Alumnex — Alumni Tracer App</h4>
+                <p class="muted" style="margin:6px 0 0">A web app for tracking alumni, search and analytics dashboards.</p>
+            </div>
+            <div style="margin-top:auto;display:flex;justify-content:space-between;align-items:center">
+                <div class="tags"><span class="tag">HTML</span><span class="tag">PHP</span><span class="tag">MySQL</span></div>
+                <div style="display:flex;gap:8px">
+                <a class="btn btn-outline" href="#" target="_blank">Demo</a>
+                <a class="btn btn-outline" href="https://github.com/PreshCassey/alumni_tracer_" target="_blank">Repo</a>
+                </div>
+            </div>
+            </article>
+
+            <article class="project">
+            <img src="./images/project3.jpg" alt="Project screenshot">
+            <div>
+                <h4 style="margin:0">Beacon Hub — Featured Project</h4>
+                <p class="muted" style="margin:6px 0 0">A community app to connect faith-based groups with resources and events.</p>
+            </div>
+            <div style="margin-top:auto;display:flex;justify-content:space-between;align-items:center">
+                <div class="tags"><span class="tag">React</span><span class="tag">Design</span></div>
+                <div style="display:flex;gap:8px">
+                <a class="btn btn-outline" href="#" target="_blank">Live</a>
+                <a class="btn btn-outline" href="#" target="_blank">Case</a>
+                </div>
+            </div>
+            </article>
+        </div>
+        </section>
+
+        <section id="writing" class="wrap reveal" data-reveal>
+        <div class="section-head">
+            <h3>Writing</h3>
+            <div class="muted">Selected posts from my blog</div>
+        </div>
+
+        <div style="display:flex;gap:18px;flex-wrap:wrap">
+            <a href="https://casseyp889930254.wordpress.com/" target="_blank" style="text-decoration:none;width:260px;background:var(--card);padding:14px;border-radius:12px;border:1px solid rgba(15,20,36,0.04)">
+            <h4 style="margin:0 0 8px">Holy After All — Excerpt</h4>
+            <p style="margin:0;color:var(--muted)">A piece from my book-in-progress exploring love, faith and growth.</p>
             </a>
-      </div>
+
+            <a href="https://casseyp889930254.wordpress.com/" target="_blank" style="text-decoration:none;width:260px;background:var(--card);padding:14px;border-radius:12px;border:1px solid rgba(15,20,36,0.04)">
+            <h4 style="margin:0 0 8px">Public Speaking Challenge — Day 1</h4>
+            <p style="margin:0;color:var(--muted)">Notes and reflections from a 7-day speaking challenge I completed.</p>
+            </a>
+        </div>
+        </section>
+
+        <section id="purpose" class="container reveal" data-reveal>
+            <div class="section-head"><h3>Purpose</h3><div class="muted">Why I build</div></div>
+            <div class="purpose">
+            <p>I believe good design is kind: it respects the user's time, invites trust, and helps people complete what they came to do. My work blends technical discipline with quiet intention — building for clarity, dignity and usefulness.</p>
+            </div>
+        </section>
+
+
+        <section id="contact" class="container reveal" data-reveal>
+            <div class="section-head"><h3>Contact</h3><div class="muted">Work with me or say hello</div></div>
+                <div class="contact-grid">
+                    <form class="contact" id="contactForm" onsubmit="sendForm(event)">
+                        <div class="field"><label for="name">Name</label><input id="name" name="name" required placeholder="Your name"></div>
+                        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required placeholder="you@company.com"></div>
+                        <div class="field"><label for="message">Message</label><textarea id="message" name="message" required placeholder="Tell me about the project..."></textarea></div>
+                        <div style="display:flex;gap:10px;align-items:center"><button class="btn btn-brand" type="submit">Send message</button><a href="mailto:preciouscasmir04@gmail.com" style="padding:8px;border-radius:8px;border:1px solid rgba(6,59,51,0.04);text-decoration:none">Email directly</a></div>
+                        <p id="formNote" style="color:var(--muted);font-size:13px;margin-top:10px"></p>
+                    </form>
+            
+                    <aside>
+                        <div class="resume-card">
+                            <h4 style="margin:0 0 8px">Resume (embedded)</h4>
+                            <p class="muted" style="margin:0 0 12px">Preview my CV below — full PDF opens in a new tab.</p>
+                            <iframe class="resume-embed" src="./others/Precious_Amarachi_Casmir_Resume.pdf" title="Resume (PDF)"></iframe>
+                            <div style="margin-top:8px;display:flex;gap:8px"><a class="" href="./others/Precious_Amarachi_Casmir_Resume.pdf" target="_blank" style="text-decoration:none;padding:8px;border-radius:8px;border:1px solid rgba(6,59,51,0.04)">Open full PDF</a></div>
+                        </div>
+
+                        <div style="margin-top:12px;background:var(--surface);padding:12px;border-radius:10px;border:1px solid rgba(6,59,51,0.04)">
+                            <h4 style="margin-top:0">Connect</h4>
+                            <p class="muted" style="margin:6px 0">Email: <a href="mailto:preciouscasmir04@gmail.com">preciouscasmir04@gmail.com</a></p>
+                            <p class="muted" style="margin:6px 0">WhatsApp: <a href="https://wa.me/+2348173406858" target="_blank">+234 817 340 6858</a></p>
+                            <div style="display:flex;gap:10px;margin-top:8px">
+                                <a href="https://linkedin.com/in/precious-casmir" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://x.com/_casseyp" target="_blank" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                                <a href="https://casseyp889930254.wordpress.com/" target="_blank" aria-label="Blog"><i class="fas fa-book"></i></a>
+                            </div>
+                        </div>
+                    </aside>
+            </div>
+        </section>
+</main>
+
+    <footer>
+    <div class="container">
+    <div style="display:flex;gap:12px;align-items:center;justify-content:center">
+    <img src="./images/logo.png" alt="logo" style="width:60px;height:60px;border-radius:10px">
+    <div style="text-align:left"><div style="font-weight:700">Precious Amarachi</div><div class="muted">Frontend Developer • 2025</div></div>
+    </div>
+    <div style="margin-top:12px" class="muted">&copy; <span id="year"></span> — Built with care.</div>
+    </div>
+    </footer>
+
+  <!-- RESUME MODAL -->
+  <div class="modal-backdrop" id="resumeModal" aria-hidden="true">
+    <div class="modal-panel">
+      <button class="modal-close" id="closeResume"><i class="fas fa-times"></i></button>
+      <iframe src="./others/Precious_Amarachi_Casmir_Resume.pdf" class="resume-iframe" title="Resume PDF"></iframe>
     </div>
   </div>
-</section>
 
-<!-- Footer -->
-<div class="bg-dark text-center text-white py-3">
-    <img src="./images/logo.png" alt="" srcset="" width="150" height="150">
-  <p>&copy; <script>document.write(new Date().getFullYear());</script> Precious Amarachi Casmir</p>
-</div>
+  <script>
+    // small helpers
+    const el = (s) => document.querySelector(s);
+    const els = (s) => document.querySelectorAll(s);
 
-<script>
-  const roles = [
-    { text: "Frontend Developer", class: "highlight-role-0" },
-    { text: "WordPress Developer", class: "highlight-role-1" },
-    { text: "Graphic Designer", class: "highlight-role-2" }
-  ];
+    // set year
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-  let roleIndex = 0;
-  let charIndex = 0;
-  let isDeleting = false;
-  const typingSpeed = 120;
-  const deletingSpeed = 60;
-  const delayBetweenRoles = 1500;
+    // mobile nav toggle
+    const mobileToggle = el('#mobileToggle');
+    const navLinks = el('.nav-links');
+    mobileToggle && mobileToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
 
-  function type() {
-    const typewriterElement = document.getElementById("typewriter");
-    const { text, class: roleClass } = roles[roleIndex];
+    // resume modal
+    const resumeBtn = el('#resumeBtn');
+    const resumeModal = el('#resumeModal');
+    const closeResume = el('#closeResume');
+    const body = document.body;
+    function showModal(){resumeModal.classList.add('open');body.style.overflow='hidden'}
+    function hideModal(){resumeModal.classList.remove('open');body.style.overflow=''}
+    resumeBtn && resumeBtn.addEventListener('click', showModal);
+    closeResume && closeResume.addEventListener('click', hideModal);
+    resumeModal && resumeModal.addEventListener('click', (e)=>{if(e.target===resumeModal) hideModal()});
 
-    if (!typewriterElement.classList.contains(roleClass)) {
-      typewriterElement.className = roleClass;
+    // simple typewriter (cycle through roles)
+    const roles = ['Frontend Developer','WordPress Developer','Graphic Designer','Writer'];
+    let rIdx = 0, cIdx = 0, deleting=false;
+    const tw = document.getElementById('tw');
+    function tick(){
+      const txt = roles[rIdx];
+      if(!deleting){
+        cIdx++;
+        tw.textContent = txt.slice(0,cIdx);
+      } else {
+        cIdx--;
+        tw.textContent = txt.slice(0,cIdx);
+      }
+      if(cIdx === txt.length && !deleting){
+        setTimeout(()=> deleting = true, 900);
+      } else if(cIdx === 0 && deleting){
+        deleting=false;
+        rIdx = (rIdx+1)%roles.length;
+      }
+      setTimeout(tick, deleting ? 60 : 100);
     }
+    document.addEventListener('DOMContentLoaded', tick);
 
-    if (isDeleting) {
-      typewriterElement.textContent = text.substring(0, charIndex--);
-    } else {
-      typewriterElement.textContent = text.substring(0, charIndex++);
+    // reveal on scroll
+    const reveals = els('[data-reveal]');
+    const io = new IntersectionObserver((entries)=>{entries.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('show'); io.unobserve(en.target);} });},{threshold:0.12});
+    reveals.forEach(r=>io.observe(r));
+
+    // animate skill bars on view
+    const bars = els('.bar i');
+    const barObserver = new IntersectionObserver((entries)=>{
+      entries.forEach(en=>{
+        if(en.isIntersecting){
+          const w = en.target.getAttribute('data-width') || '80%';
+          en.target.style.width = w;
+        }
+      });
+    }, {threshold:0.35});
+    bars.forEach(b => barObserver.observe(b));
+
+    // Form sending: mailto fallback
+    function sendForm(e){
+      e.preventDefault();
+      const name = el('#name').value.trim();
+      const email = el('#email').value.trim();
+      const message = el('#message').value.trim();
+      if(!name||!email||!message) return;
+      const subject = encodeURIComponent(`Portfolio contact from ${name}`);
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+      window.location.href = `mailto:preciouscasmir04@gmail.com?subject=${subject}&body=${body}`;
+      el('#formNote').textContent = 'Mail client opening — if not, use Email directly link.';
+      e.target.reset();
     }
-
-    if (!isDeleting && charIndex === text.length) {
-      isDeleting = true;
-      setTimeout(type, delayBetweenRoles);
-    } else if (isDeleting && charIndex === 0) {
-      isDeleting = false;
-      roleIndex = (roleIndex + 1) % roles.length;
-      setTimeout(type, typingSpeed);
-    } else {
-      setTimeout(type, isDeleting ? deletingSpeed : typingSpeed);
-    }
-  }
-
-  document.addEventListener("DOMContentLoaded", type);
-</script>
-<script>
-  window.addEventListener("scroll", function() {
-    const navbar = document.querySelector(".custom-navbar");
-    if (window.scrollY > 50) {
-      navbar.classList.add("scrolled");
-    } else {
-      navbar.classList.remove("scrolled");
-    }
-  });
-</script>
-
-<!-- Scripts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000,
-    once: true
-  });
-</script>
+    el('#contactForm') && el('#contactForm').addEventListener('submit', sendForm);
+  </script>
 </body>
 </html>

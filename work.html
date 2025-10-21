@@ -1,262 +1,239 @@
-<!DOCTYPE html>
+<!-- INDEX.HTML -->
+
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRECIOUS AMARACHI CASMIR</title>
-      <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Precious Amarachi Casmir — Portfolio</title>
+  <meta name="description" content="Precious Amarachi Casmir — Frontend Developer. Building beautiful, human-centered digital experiences.">
 
-      <link rel="stylesheet" href="./css/style1.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Fallback fav icon -->
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
 </head>
 <body>
-<!-- Navbar -->
-<nav class="navbar navbar-expand-sm mb-5 fixed-top mt-0 px-0 custom-navbar">
-  <div class="container-fluid">
-    <a class="navbar-brand fw-bold logo-text text-white" href="index.html"><img src="./images/logo.png" alt="" srcset="" width="100" height="100"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <!-- NAV -->
+  <header class="site-nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#">
+        <img src="./images/logo.png" alt="logo" class="brand-img">
+        <div class="brand-text">
+          <div class="name">Precious Amarachi</div>
+          <div class="sub">Frontend Developer • Designer</div>
+        </div>
+      </a>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto fw-bold text-white">
-        <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#work-section">Work</a></li>
-        <li class="nav-item"><a class="nav-link" href="https://casseyp889930254.wordpress.com/">Shelf</a></li>
-        <li class="nav-item"><a class="nav-link" href="index.html">Contact</a></li>
-        <li class="nav-item"><a class="nav-link" target="_blank" href="./others/Precious_Amarachi_Casmir_Resume.pdf">Resume</a></li>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="work.html">Work</a>
+        <a href="https://casseyp889930254.wordpress.com/" target="_blank">Shelf</a>
+        <a href="#contact">Contact</a>
+        <button class="btn btn-brand" id="resumeBtn">Resume</button>
+      </nav>
 
-      </ul>
-      <a href="#contact-section" class="btn btn-nav ms-lg-3">Hire Me</a>
+      <button class="mobile-toggle" id="mobileToggle"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <!-- HERO / INTRO -->
+  <section class="hero" id="intro">
+    <div class="container hero-inner">
+      <div class="hero-left">
+        <div class="eyebrow">Hello — I’m Precious</div>
+        <h1 class="hero-title">Hi, I’m Precious Amarachi Casmir</h1>
+        <p class="lead">I build polished, accessible interfaces and write about what I learn. I’m available for freelance and full-time roles — let’s build something meaningful together.</p>
+
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-brand">Hire me</a>
+          <a href="./others/Precious_Amarachi_Casmir_Resume.pdf" class="btn btn-ghost" target="_blank">Open Resume</a>
+        </div>
+
+        <div class="socials">
+          <a href="https://linkedin.com/in/precious-casmir" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://x.com/_casseyp" target="_blank"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://casseyp889930254.wordpress.com/" target="_blank"><i class="fas fa-book"></i></a>
+        </div>
+      </div>
+
+      <aside class="hero-right">
+        <div class="profile-card">
+          <img src="./images/bg_1.png" alt="Precious — profile" class="profile-img">
+          <div class="profile-name">Precious Amarachi</div>
+          <div class="profile-role">Frontend Developer · WordPress · Designer</div>
+          <div class="availability">Available • Remote</div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- WORK / PROJECTS -->
+  <section class="work" id="work">
+    <div class="container">
+      <div class="section-head">
+        <h2>My Work</h2>
+        <p class="muted">A curated selection of design and web projects.</p>
+      </div>
+
+      <h3 class="subhead">Graphic Designs</h3>
+      <div class="grid gallery-grid">
+        <!-- eight images -->
+        <div class="card-img"><img src="./images/works/1.jpg" alt="work"></div>
+        <div class="card-img"><img src="./images/works/2.jpg" alt="work"></div>
+        <div class="card-img"><img src="./images/works/3.jpg" alt="work"></div>
+        <div class="card-img"><img src="./images/works/4.jpg" alt="work"></div>
+        <!-- <div class="card-img"><img src="./images/works/5.jpg" alt="work"></div>
+        <div class="card-img"><img src="./images/works/6.jpg" alt="work"></div>
+        <div class="card-img"><img src="./images/works/7.jpg" alt="work"></div>
+        <div class="card-img"><img src="./images/works/8.jpg" alt="work"></div> -->
+      </div>
+
+      <h3 class="subhead">Web Projects</h3>
+      <div class="grid projects-grid">
+        <article class="project-card">
+          <div class="iframe-wrap"><iframe src="https://preshcassey.github.io/huddle-landing-page/" title="Huddle"></iframe></div>
+          <div class="project-body"><h4>Huddle — Landing Page</h4><p class="muted">Responsive marketing landing page.</p></div>
+        </article>
+
+        <article class="project-card">
+          <div class="iframe-wrap"><iframe src="https://preshcassey.github.io/EasyBank_Landing_Page/" title="EasyBank"></iframe></div>
+          <div class="project-body"><h4>EasyBank — Landing Page</h4><p class="muted">Design-focused responsive page.</p></div>
+        </article>
+
+        <article class="project-card">
+          <div class="iframe-wrap"><iframe src="https://career.talenttic.com/" title="Talenttic Career"></iframe></div>
+          <div class="project-body"><h4>Career Portal</h4><p class="muted">WordPress career portal.</p></div>
+        </article>
+
+        <article class="project-card">
+          <div class="iframe-wrap"><iframe src="https://blog.talenttic.com/" title="Talenttic Blog"></iframe></div>
+          <div class="project-body"><h4>WordPress Blog</h4><p class="muted">CMS powered content site.</p></div>
+        </article>
+
+        <article class="project-card">
+          <div class="iframe-wrap"><iframe src="https://ireferdocrural.com/" title="Irefer"></iframe></div>
+          <div class="project-body"><h4>Healthcare Site</h4><p class="muted">WordPress-based rural healthcare site.</p></div>
+        </article>
+
+        <article class="project-card">
+          <div class="iframe-wrap"><iframe src="https://votcas.great-site.net/?i=1" title="VOTCAS"></iframe></div>
+          <div class="project-body"><h4><a href="https://votcas.great-site.net/?i=1">VOTCAS</a></h4><p class="muted">Voting and case management project.</p></div>
+        </article>
+
+        <article class="project-card">
+          <div class="iframe-wrap"><iframe src="https://gfu-alumnitracer.free.nf/?i=2" title="Alumni Tracer"></iframe></div>
+          <div class="project-body"><h4>Alumex</h4><p class="muted">Alumni tracking & engagement app.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-head"><h2>Contact</h2><p class="muted">Have a project or question? Let's talk.</p></div>
+      <div class="contact-grid">
+        <form class="contact-form" id="contactForm" onsubmit="sendForm(event)">
+          <label>Name <input id="name" name="name" required></label>
+          <label>Email <input id="email" name="email" type="email" required></label>
+          <label>Message <textarea id="message" name="message" required></textarea></label>
+          <div class="form-actions"><button class="btn btn-brand" type="submit">Send</button><a class="btn btn-ghost" href="mailto:preciouscasmir04@gmail.com">Email directly</a></div>
+          <p id="formNote" class="muted"></p>
+        </form>
+
+        <aside class="side-info">
+          <div class="resume-card">
+            <h4>Resume</h4>
+            <p class="muted">Open the resume in a modal to preview.</p>
+            <button class="btn btn-outline" id="openResume">Preview Resume</button>
+          </div>
+
+          <div class="connect">
+            <h4>Connect</h4>
+            <p class="muted">Email: <a href="mailto:preciouscasmir04@gmail.com">preciouscasmir04@gmail.com</a></p>
+            <p class="muted">WhatsApp: <a href="https://wa.me/+2348173406858" target="_blank">+234 817 340 6858</a></p>
+            <div class="social-row"><a href="https://linkedin.com/in/precious-casmir" target="_blank"><i class="fab fa-linkedin"></i></a><a href="https://x.com/_casseyp" target="_blank"><i class="fab fa-x-twitter"></i></a><a href="https://casseyp889930254.wordpress.com/" target="_blank"><i class="fas fa-book"></i></a></div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME MODAL -->
+  <div class="modal-backdrop" id="resumeModal" aria-hidden="true">
+    <div class="modal-panel">
+      <button class="modal-close" id="closeResume"><i class="fas fa-times"></i></button>
+      <iframe src="./others/Precious_Amarachi_Casmir_Resume.pdf" class="resume-iframe" title="Resume PDF"></iframe>
     </div>
   </div>
-</nav>
 
-<!-- Typewriter Heading -->
-<div class="container text-center" style="margin-top: 100px;">
-  <span id="typewriter"></span>
-</div>
-
-<style>
-    
-       /* Typewriter heading */
-    #typewriter{
-      font-size: 2rem;
-      font-weight: bold;
-      color: #2EAF7D;
-    }
-</style>
-
-<section class="my-work py-5">
-  <div class="container">
-    <h2 class="text-center mb-5 fw-bold">My Work</h2>
-
-    <!-- Graphic Designs -->
-    <h3 class="mb-4">Graphic Designs</h3>
-    <div class="row g-4">
-      <!-- Keep all 8 images -->
-      <div class="col-md-3 col-sm-6">
-        <div class="card shadow-sm h-100 border-0">
-          <img src="images/works/1.jpg" class="card-img-top gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal1">
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="card shadow-sm h-100 border-0">
-          <img src="images/works/2.jpg" class="card-img-top gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal2">
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="card shadow-sm h-100 border-0">
-          <img src="images/works/3.jpg" class="card-img-top gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal3">
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="card shadow-sm h-100 border-0">
-          <img src="images/works/4.jpg" class="card-img-top gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal4">
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="card shadow-sm h-100 border-0">
-          <img src="images/works/5.jpg" class="card-img-top gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal5">
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="card shadow-sm h-100 border-0">
-          <img src="images/works/6.jpg" class="card-img-top gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal6">
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="card shadow-sm h-100 border-0">
-          <img src="images/works/7.jpg" class="card-img-top gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal7">
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="card shadow-sm h-100 border-0">
-          <img src="images/works/8.jpg" class="card-img-top gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal8">
-        </div>
-      </div>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand-small"><img src="./images/logo.png" alt="logo" class="brand-img-small"><div><strong>Precious Amarachi</strong><div class="muted">Frontend Developer • 2025</div></div></div>
+      <div class="footer-links">&copy; <span id="year"></span> — Built with care • <a href="#contact">Contact</a></div>
     </div>
+  </footer>
 
-    <!-- Web Projects -->
-    <h3 class="mt-5 mb-4">Web Projects</h3>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card portfolio-card shadow-sm h-100 border-0">
-          <div class="iframe-container">
-            <iframe src="https://preshcassey.github.io/huddle-landing-page/"></iframe>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Landing Page</h5>
-            <p class="card-text">Huddle landing page design.</p>
-          </div>
-        </div>
-      </div>
+  <!-- SCRIPTS (merged inside index) -->
+  <script>
+    // small helpers
+    const el = (s) => document.querySelector(s);
+    const els = (s) => document.querySelectorAll(s);
 
-      <div class="col-md-4">
-        <div class="card portfolio-card shadow-sm h-100 border-0">
-          <div class="iframe-container">
-            <iframe src="https://preshcassey.github.io/EasyBank_Landing_Page/"></iframe>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Landing Page</h5>
-            <p class="card-text">EasyBank landing page.</p>
-          </div>
-        </div>
-      </div>
+    // mobile nav toggle
+    const mobileToggle = el('#mobileToggle');
+    const navLinks = el('.nav-links');
+    mobileToggle && mobileToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
 
-      <div class="col-md-4">
-        <div class="card portfolio-card shadow-sm h-100 border-0">
-          <div class="iframe-container">
-            <iframe src="https://career.talenttic.com/"></iframe>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">WordPress Career Portal</h5>
-            <p class="card-text">Career platform for job seekers.</p>
-          </div>
-        </div>
-      </div>
+    // resume modal
+    const resumeBtn = el('#resumeBtn');
+    const openResume = el('#openResume');
+    const resumeModal = el('#resumeModal');
+    const closeResume = el('#closeResume');
+    const body = document.body;
+    function showModal(){resumeModal.classList.add('open');body.style.overflow='hidden'}
+    function hideModal(){resumeModal.classList.remove('open');body.style.overflow=''}
+    resumeBtn && resumeBtn.addEventListener('click', showModal);
+    openResume && openResume.addEventListener('click', showModal);
+    closeResume && closeResume.addEventListener('click', hideModal);
+    resumeModal && resumeModal.addEventListener('click', (e)=>{if(e.target===resumeModal) hideModal()});
 
-      <div class="col-md-4">
-        <div class="card portfolio-card shadow-sm h-100 border-0">
-          <div class="iframe-container">
-            <iframe src="https://blog.talenttic.com/"></iframe>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">WordPress Blog</h5>
-            <p class="card-text">A professional blog website.</p>
-          </div>
-        </div>
-      </div>
+    // year
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-      <div class="col-md-4">
-        <div class="card portfolio-card shadow-sm h-100 border-0">
-          <div class="iframe-container">
-            <iframe src="https://ireferdocrural.com/"></iframe>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">WordPress Medical Site</h5>
-            <p class="card-text">WordPress-based rural healthcare website.</p>
-          </div>
-        </div>
-      </div>
+    // simple typewriter for small heading (optional)
+    const twText = 'My Work — A showcase of my projects and designs';
+    let tIndex=0;
+    const twEl = document.createElement('div'); twEl.className='typewriter-small muted'; twEl.style.marginTop='12px';
+    el('.section-head') && el('.section-head').appendChild(twEl);
+    function typeSmall(){ if(tIndex<twText.length){ twEl.textContent+=twText.charAt(tIndex++); setTimeout(typeSmall,60);} }
+    document.addEventListener('DOMContentLoaded', typeSmall);
 
-      <!-- VOTCAS Project -->
-      <div class="col-md-4">
-        <div class="card portfolio-card shadow-sm h-100 border-0">
-          <div class="iframe-container">
-            <iframe src="https://votcas.great-site.net/"></iframe>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">VOTCAS</h5>
-            <p class="card-text">Voting and Case Management academic project.</p>
-            <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#votcasModal">
-              View Project
-            </button>
-          </div>
-        </div>
-      </div>
+    // reveal on scroll
+    const reveals = els('.card-img, .project-card, .profile-card');
+    const io = new IntersectionObserver((entries)=>{entries.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('show'); io.unobserve(en.target);} });},{threshold:0.12});
+    reveals.forEach(r=>io.observe(r));
 
-      <!-- Alumni Tracer Project -->
-      <div class="col-md-4">
-        <div class="card portfolio-card shadow-sm h-100 border-0">
-          <div class="iframe-container">
-            <iframe src="https://gfu-alumnitracer.free.nf/?i=2"></iframe>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Alumni Tracer</h5>
-            <p class="card-text">Alumni tracking and engagement platform.</p>
-            <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#alumniModal">
-              View Project
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    // contact form mailto fallback
+    function sendForm(e){ e.preventDefault(); const name=el('#name').value.trim(); const email=el('#email').value.trim(); const message=el('#message').value.trim(); if(!name||!email||!message) return; const subject = encodeURIComponent(`Portfolio contact from ${name}`); const body = encodeURIComponent(`Name: ${name}
+Email: ${email}
 
-<!-- Project Modals -->
-<div class="modal fade" id="votcasModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-fullscreen">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">VOTCAS</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body p-0">
-        <iframe src="https://votcas.great-site.net/" style="width:100%; height:100%; border:none;"></iframe>
-      </div>
-    </div>
-  </div>
-</div>
+${message}`); window.location.href = `mailto:preciouscasmir04@gmail.com?subject=${subject}&body=${body}`; el('#formNote').textContent='Mail client opening — if not, use Email directly link.'; e.target.reset(); }
+    el('#contactForm') && el('#contactForm').addEventListener('submit', sendForm);
 
-<div class="modal fade" id="alumniModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-fullscreen">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Alumni Tracer</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body p-0">
-        <iframe src="https://gfu-alumnitracer.free.nf/?i=2" style="width:100%; height:100%; border:none;"></iframe>
-      </div>
-    </div>
-  </div>
-</div>
+    // lightbox: click gallery images to open in modal-like viewer
+    els('.gallery-grid .card-img img, .card-img img').forEach(img=> img.addEventListener('click', (e)=>{
+      const src = e.currentTarget.getAttribute('src'); const viewer = document.createElement('div'); viewer.className='image-viewer'; viewer.innerHTML = `<div class="viewer-panel"><img src="${src}" alt="preview"><button class="viewer-close"><i class="fas fa-times"></i></button></div>`; document.body.appendChild(viewer); body.style.overflow='hidden'; viewer.addEventListener('click',(evt)=>{ if(evt.target.classList.contains('viewer-close')||evt.target===viewer){ viewer.remove(); body.style.overflow=''; }});
+    }));
 
-<!-- Footer -->
- <div class="text-center text-white py-3">
-<footer>
-    <img src="./images/logo.png" alt="" srcset="" width="150" height="150">
-  <p>&copy; 2025 Precious Amarachi Casmir | Built with ❤️ | <a href="index.html">Contact Me</a></p>
-</footer>
-</div>
-<script>
-  window.addEventListener("scroll", function() {
-    const navbar = document.querySelector(".custom-navbar");
-    if (window.scrollY > 50) {
-      navbar.classList.add("scrolled");
-    } else {
-      navbar.classList.remove("scrolled");
-    }
-  });
-</script>
-<!-- Typewriter Script -->
-<script>
-const text = "My Work — A showcase of my projects and designs";
-let i = 0;
-let speed = 80;
-function typeWriter() {
-  if (i < text.length) {
-    document.getElementById("typewriter").innerHTML += text.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
-document.addEventListener("DOMContentLoaded", typeWriter);
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+  </script>
