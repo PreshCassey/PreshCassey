@@ -1,6 +1,4 @@
-<!-- INDEX.HTML -->
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -9,7 +7,7 @@
   <meta name="description" content="Precious Amarachi Casmir — Frontend Developer. Building beautiful, human-centered digital experiences.">
 
   <!-- Fonts & Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
 
@@ -22,146 +20,239 @@
 <body>
   <!-- NAV -->
   <header class="site-nav">
-    <div class="container nav-inner">
-      <a class="brand" href="#">
-        <img src="./images/logo.png" alt="logo" class="brand-img">
-        <div class="brand-text">
-          <div class="name">Precious Amarachi</div>
-          <div class="sub">Frontend Developer • Designer</div>
-        </div>
-      </a>
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <a class="brand d-flex align-items-center gap-3 text-decoration-none" href="#" style="color: var(--teal-700);">
+          <img src="./images/logo.png" alt="logo" class="brand-img">
+          <div class="brand-text">
+            <div class="name fw-bold">Precious Amarachi</div>
+            <div class="sub text-muted small">Frontend Developer • Designer</div>
+          </div>
+        </a>
 
-      <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="work.html">Work</a>
-        <a href="https://casseyp889930254.wordpress.com/" target="_blank">Shelf</a>
-        <a href="#contact">Contact</a>
-        <button class="btn btn-brand" id="resumeBtn">Resume</button>
-      </nav>
+        <nav class="nav-links d-flex align-items-center gap-3">
+          <a class="text-muted text-decoration-none px-2 py-1 rounded-3 fw-semibold" href="index.html">Home</a>
+          <a class="text-muted text-decoration-none px-2 py-1 rounded-3 fw-semibold" href="work.html">Work</a>
+          <a class="text-muted text-decoration-none px-2 py-1 rounded-3 fw-semibold" href="https://casseyp889930254.wordpress.com/" target="_blank">Shelf</a>
+          <a class="text-muted text-decoration-none px-2 py-1 rounded-3 fw-semibold" href="#contact">Contact</a>
+          <button class="btn" id="resumeBtn" style="background: var(--accent); color: white;">Resume</button>
+        </nav>
 
-      <button class="mobile-toggle" id="mobileToggle"><i class="fas fa-bars"></i></button>
+        <button class="mobile-toggle d-none border-0 bg-transparent" id="mobileToggle" style="font-size: 1.125rem; color: var(--teal-700);">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
     </div>
   </header>
 
   <!-- HERO / INTRO -->
-  <section class="hero" id="intro">
-    <div class="container hero-inner">
-      <div class="hero-left">
-        <div class="eyebrow">Hello — I’m Precious</div>
-        <h1 class="hero-title">Hi, I’m Precious Amarachi Casmir</h1>
-        <p class="lead">I build polished, accessible interfaces and write about what I learn. I’m available for freelance and full-time roles — let’s build something meaningful together.</p>
+  <section class="wrap d-flex align-items-center gap-4 py-5 min-vh-75" id="intro">
+    <div class="flex-grow-1">
+      <div class="eyebrow">Hello — I’m Precious</div>
+      <h1 class="hero-title display-4 mb-3 lh-1">Hi, I’m Precious Amarachi Casmir</h1>
+      <p class="lead mb-4">I build polished, accessible interfaces and write about what I learn. I’m available for freelance and full-time roles — let’s build something meaningful together.</p>
 
-        <div class="hero-ctas">
-          <a href="#contact" class="btn btn-brand">Hire me</a>
-          <a href="./others/Precious_Amarachi_Casmir_Resume.pdf" class="btn btn-ghost" target="_blank">Open Resume</a>
-        </div>
-
-        <div class="socials">
-          <a href="https://linkedin.com/in/precious-casmir" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://x.com/_casseyp" target="_blank"><i class="fab fa-x-twitter"></i></a>
-          <a href="https://casseyp889930254.wordpress.com/" target="_blank"><i class="fas fa-book"></i></a>
-        </div>
+      <div class="d-flex gap-3 align-items-center mb-3">
+        <a href="#contact" class="btn" style="background: var(--accent); color: white;">Hire me</a>
+        <a href="./others/Precious_Amarachi_Casmir_Resume.pdf" class="btn btn-outline-secondary" target="_blank">Open Resume</a>
       </div>
 
-      <aside class="hero-right">
-        <div class="profile-card">
-          <img src="./images/bg_1.png" alt="Precious — profile" class="profile-img">
-          <div class="profile-name">Precious Amarachi</div>
-          <div class="profile-role">Frontend Developer · WordPress · Designer</div>
-          <div class="availability">Available • Remote</div>
-        </div>
-      </aside>
+      <div class="d-flex gap-3 align-items-center">
+        <a href="https://linkedin.com/in/precious-casmir" target="_blank" class="social-icon">
+          <i class="fab fa-linkedin fa-lg"></i>
+        </a>
+        <a href="https://x.com/_casseyp" target="_blank" class="social-icon">
+          <i class="fab fa-x-twitter fa-lg"></i>
+        </a>
+        <a href="https://casseyp889930254.wordpress.com/" target="_blank" class="social-icon">
+          <i class="fas fa-book fa-lg"></i>
+        </a>
+      </div>
     </div>
+
+    <aside class="flex-shrink-0">
+      <div class="profile-card">
+        <img src="./images/bg_1.jpg" alt="Precious — profile" class="profile-img">
+        <div class="profile-name">Precious Amarachi</div>
+        <div class="profile-role">Frontend Developer · WordPress · Designer</div>
+        <div class="availability">Available • Remote</div>
+      </div>
+    </aside>
   </section>
 
   <!-- WORK / PROJECTS -->
-  <section class="work" id="work">
-    <div class="container">
-      <div class="section-head">
-        <h2>My Work</h2>
-        <p class="muted">A curated selection of design and web projects.</p>
+  <section class="wrap py-5 reveal" data-reveal id="work">
+    <div class="d-flex justify-content-between align-items-end mb-4">
+      <h2 class="h1 mb-0">My Work</h2>
+      <p class="text-muted lead">A curated selection of design and web projects.</p>
+    </div>
+
+    <h3 class="h3 mb-4">Graphic Designs</h3>
+    <div class="row g-3 mb-5">
+      <div class="col-6 col-md-3">
+        <div class="card-img position-relative overflow-hidden rounded-3">
+          <img src="./images/works/1.jpg" alt="work" class="w-100 h-100 object-fit-cover">
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="card-img position-relative overflow-hidden rounded-3">
+          <img src="./images/works/2.jpg" alt="work" class="w-100 h-100 object-fit-cover">
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="card-img position-relative overflow-hidden rounded-3">
+          <img src="./images/works/3.jpg" alt="work" class="w-100 h-100 object-fit-cover">
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="card-img position-relative overflow-hidden rounded-3">
+          <img src="./images/works/4.jpg" alt="work" class="w-100 h-100 object-fit-cover">
+        </div>
+      </div>
+    </div>
+
+    <h3 class="h3 mb-4">Web Projects</h3>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <article class="project-card card h-100 border-0 shadow-sm">
+          <div class="iframe-wrap rounded-top-3 overflow-hidden">
+            <iframe src="https://preshcassey.github.io/huddle-landing-page/" title="Huddle" class="w-100 h-100 border-0"></iframe>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h4 class="card-title h6 mb-2">Huddle — Landing Page</h4>
+            <p class="card-text text-muted small mb-3">Responsive marketing landing page.</p>
+          </div>
+        </article>
       </div>
 
-      <h3 class="subhead">Graphic Designs</h3>
-      <div class="grid gallery-grid">
-        <!-- eight images -->
-        <div class="card-img"><img src="./images/works/1.jpg" alt="work"></div>
-        <div class="card-img"><img src="./images/works/2.jpg" alt="work"></div>
-        <div class="card-img"><img src="./images/works/3.jpg" alt="work"></div>
-        <div class="card-img"><img src="./images/works/4.jpg" alt="work"></div>
-        <!-- <div class="card-img"><img src="./images/works/5.jpg" alt="work"></div>
-        <div class="card-img"><img src="./images/works/6.jpg" alt="work"></div>
-        <div class="card-img"><img src="./images/works/7.jpg" alt="work"></div>
-        <div class="card-img"><img src="./images/works/8.jpg" alt="work"></div> -->
+      <div class="col-lg-4 col-md-6">
+        <article class="project-card card h-100 border-0 shadow-sm">
+          <div class="iframe-wrap rounded-top-3 overflow-hidden">
+            <iframe src="https://preshcassey.github.io/EasyBank_Landing_Page/" title="EasyBank" class="w-100 h-100 border-0"></iframe>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h4 class="card-title h6 mb-2">EasyBank — Landing Page</h4>
+            <p class="card-text text-muted small mb-3">Design-focused responsive page.</p>
+          </div>
+        </article>
       </div>
 
-      <h3 class="subhead">Web Projects</h3>
-      <div class="grid projects-grid">
-        <article class="project-card">
-          <div class="iframe-wrap"><iframe src="https://preshcassey.github.io/huddle-landing-page/" title="Huddle"></iframe></div>
-          <div class="project-body"><h4>Huddle — Landing Page</h4><p class="muted">Responsive marketing landing page.</p></div>
+      <div class="col-lg-4 col-md-6">
+        <article class="project-card card h-100 border-0 shadow-sm">
+          <div class="iframe-wrap rounded-top-3 overflow-hidden">
+            <iframe src="https://career.talenttic.com/" title="Talenttic Career" class="w-100 h-100 border-0"></iframe>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h4 class="card-title h6 mb-2">Career Portal</h4>
+            <p class="card-text text-muted small mb-3">WordPress career portal.</p>
+          </div>
         </article>
+      </div>
 
-        <article class="project-card">
-          <div class="iframe-wrap"><iframe src="https://preshcassey.github.io/EasyBank_Landing_Page/" title="EasyBank"></iframe></div>
-          <div class="project-body"><h4>EasyBank — Landing Page</h4><p class="muted">Design-focused responsive page.</p></div>
+      <div class="col-lg-4 col-md-6">
+        <article class="project-card card h-100 border-0 shadow-sm">
+          <div class="iframe-wrap rounded-top-3 overflow-hidden">
+            <iframe src="https://blog.talenttic.com/" title="Talenttic Blog" class="w-100 h-100 border-0"></iframe>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h4 class="card-title h6 mb-2">WordPress Blog</h4>
+            <p class="card-text text-muted small mb-3">CMS powered content site.</p>
+          </div>
         </article>
+      </div>
 
-        <article class="project-card">
-          <div class="iframe-wrap"><iframe src="https://career.talenttic.com/" title="Talenttic Career"></iframe></div>
-          <div class="project-body"><h4>Career Portal</h4><p class="muted">WordPress career portal.</p></div>
+      <div class="col-lg-4 col-md-6">
+        <article class="project-card card h-100 border-0 shadow-sm">
+          <div class="iframe-wrap rounded-top-3 overflow-hidden">
+            <iframe src="https://ireferdocrural.com/" title="Irefer" class="w-100 h-100 border-0"></iframe>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h4 class="card-title h6 mb-2">Healthcare Site</h4>
+            <p class="card-text text-muted small mb-3">WordPress-based rural healthcare site.</p>
+          </div>
         </article>
+      </div>
 
-        <article class="project-card">
-          <div class="iframe-wrap"><iframe src="https://blog.talenttic.com/" title="Talenttic Blog"></iframe></div>
-          <div class="project-body"><h4>WordPress Blog</h4><p class="muted">CMS powered content site.</p></div>
+      <div class="col-lg-4 col-md-6">
+        <article class="project-card card h-100 border-0 shadow-sm">
+          <div class="iframe-wrap rounded-top-3 overflow-hidden">
+            <iframe src="https://votcas.great-site.net/?i=1" title="VOTCAS" class="w-100 h-100 border-0"></iframe>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h4 class="card-title h6 mb-2">
+              <a href="https://votcas.great-site.net/?i=1" class="text-decoration-none">VOTCAS</a>
+            </h4>
+            <p class="card-text text-muted small mb-3">Voting and case management project.</p>
+          </div>
         </article>
+      </div>
 
-        <article class="project-card">
-          <div class="iframe-wrap"><iframe src="https://ireferdocrural.com/" title="Irefer"></iframe></div>
-          <div class="project-body"><h4>Healthcare Site</h4><p class="muted">WordPress-based rural healthcare site.</p></div>
-        </article>
-
-        <article class="project-card">
-          <div class="iframe-wrap"><iframe src="https://votcas.great-site.net/?i=1" title="VOTCAS"></iframe></div>
-          <div class="project-body"><h4><a href="https://votcas.great-site.net/?i=1">VOTCAS</a></h4><p class="muted">Voting and case management project.</p></div>
-        </article>
-
-        <article class="project-card">
-          <div class="iframe-wrap"><iframe src="https://gfu-alumnitracer.free.nf/?i=2" title="Alumni Tracer"></iframe></div>
-          <div class="project-body"><h4>Alumex</h4><p class="muted">Alumni tracking & engagement app.</p></div>
+      <div class="col-lg-4 col-md-6">
+        <article class="project-card card h-100 border-0 shadow-sm">
+          <div class="iframe-wrap rounded-top-3 overflow-hidden">
+            <iframe src="https://gfu-alumnitracer.free.nf/?i=2" title="Alumni Tracer" class="w-100 h-100 border-0"></iframe>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h4 class="card-title h6 mb-2">Alumex</h4>
+            <p class="card-text text-muted small mb-3">Alumni tracking & engagement app.</p>
+          </div>
         </article>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section class="contact-section" id="contact">
-    <div class="container">
-      <div class="section-head"><h2>Contact</h2><p class="muted">Have a project or question? Let's talk.</p></div>
-      <div class="contact-grid">
-        <form class="contact-form" id="contactForm" onsubmit="sendForm(event)">
-          <label>Name <input id="name" name="name" required></label>
-          <label>Email <input id="email" name="email" type="email" required></label>
-          <label>Message <textarea id="message" name="message" required></textarea></label>
-          <div class="form-actions"><button class="btn btn-brand" type="submit">Send</button><a class="btn btn-ghost" href="mailto:preciouscasmir04@gmail.com">Email directly</a></div>
-          <p id="formNote" class="muted"></p>
+  <section class="container py-5 reveal" data-reveal id="contact">
+    <div class="d-flex justify-content-between align-items-end mb-4">
+      <h2 class="h1 mb-0">Contact</h2>
+      <p class="text-muted lead">Have a project or question? Let's talk.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-8">
+        <form class="contact card border-0 shadow-sm p-4" id="contactForm" onsubmit="sendForm(event)">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input id="name" name="name" class="form-control" required placeholder="Your name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input id="email" name="email" type="email" class="form-control" required placeholder="you@company.com">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" class="form-control" required placeholder="Tell me about the project..." rows="5"></textarea>
+          </div>
+          <div class="d-flex gap-2">
+            <button class="btn" type="submit" style="background: var(--accent); color: white;">Send</button>
+            <a class="btn btn-outline-secondary" href="mailto:preciouscasmir04@gmail.com">Email directly</a>
+          </div>
+          <p id="formNote" class="form-note text-muted small mt-2"></p>
         </form>
+      </div>
 
-        <aside class="side-info">
-          <div class="resume-card">
-            <h4>Resume</h4>
-            <p class="muted">Open the resume in a modal to preview.</p>
-            <button class="btn btn-outline" id="openResume">Preview Resume</button>
-          </div>
+      <div class="col-lg-4">
+        <div class="resume-card card border-0 shadow-sm p-3 mb-3">
+          <h4 class="card-title h6 mb-2">Resume</h4>
+          <p class="card-text text-muted small mb-3">Open the resume in a modal to preview.</p>
+          <button class="btn btn-outline-secondary btn-sm" id="openResume">Preview Resume</button>
+        </div>
 
-          <div class="connect">
-            <h4>Connect</h4>
-            <p class="muted">Email: <a href="mailto:preciouscasmir04@gmail.com">preciouscasmir04@gmail.com</a></p>
-            <p class="muted">WhatsApp: <a href="https://wa.me/+2348173406858" target="_blank">+234 817 340 6858</a></p>
-            <div class="social-row"><a href="https://linkedin.com/in/precious-casmir" target="_blank"><i class="fab fa-linkedin"></i></a><a href="https://x.com/_casseyp" target="_blank"><i class="fab fa-x-twitter"></i></a><a href="https://casseyp889930254.wordpress.com/" target="_blank"><i class="fas fa-book"></i></a></div>
+        <div class="connect card border-0 shadow-sm p-3">
+          <h4 class="card-title h6 mb-3">Connect</h4>
+          <p class="card-text text-muted small mb-2">Email: <a href="mailto:preciouscasmir04@gmail.com">preciouscasmir04@gmail.com</a></p>
+          <p class="card-text text-muted small mb-3">WhatsApp: <a href="https://wa.me/+2348173406858" target="_blank">+234 817 340 6858</a></p>
+          <div class="d-flex gap-2">
+            <a href="https://linkedin.com/in/precious-casmir" target="_blank" class="social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://x.com/_casseyp" target="_blank" class="social-icon">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="https://casseyp889930254.wordpress.com/" target="_blank" class="social-icon">
+              <i class="fas fa-book"></i>
+            </a>
           </div>
-        </aside>
+        </div>
       </div>
     </div>
   </section>
@@ -175,14 +266,26 @@
   </div>
 
   <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="brand-small"><img src="./images/logo.png" alt="logo" class="brand-img-small"><div><strong>Precious Amarachi</strong><div class="muted">Frontend Developer • 2025</div></div></div>
-      <div class="footer-links">&copy; <span id="year"></span> — Built with care • <a href="#contact">Contact</a></div>
+  <footer class="site-footer py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="d-flex align-items-center gap-3">
+            <img src="./images/logo.png" alt="logo" class="brand-img-small">
+            <div>
+              <strong>Precious Amarachi Casmir</strong>
+              <div class="text-muted small">Frontend Developer • 2025</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <div class="text-muted small">&copy; <span id="year"></span> Presh Cassey - Built with care • <a href="#contact" class="text-muted text-decoration-none">Contact</a></div>
+        </div>
+      </div>
     </div>
   </footer>
 
-  <!-- SCRIPTS (merged inside index) -->
+  <!-- SCRIPTS -->
   <script>
     // small helpers
     const el = (s) => document.querySelector(s);
@@ -211,29 +314,52 @@
     // year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // simple typewriter for small heading (optional)
-    const twText = 'My Work — A showcase of my projects and designs';
-    let tIndex=0;
-    const twEl = document.createElement('div'); twEl.className='typewriter-small muted'; twEl.style.marginTop='12px';
-    el('.section-head') && el('.section-head').appendChild(twEl);
-    function typeSmall(){ if(tIndex<twText.length){ twEl.textContent+=twText.charAt(tIndex++); setTimeout(typeSmall,60);} }
-    document.addEventListener('DOMContentLoaded', typeSmall);
-
     // reveal on scroll
-    const reveals = els('.card-img, .project-card, .profile-card');
+    const reveals = els('[data-reveal]');
     const io = new IntersectionObserver((entries)=>{entries.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('show'); io.unobserve(en.target);} });},{threshold:0.12});
     reveals.forEach(r=>io.observe(r));
 
-    // contact form mailto fallback
-    function sendForm(e){ e.preventDefault(); const name=el('#name').value.trim(); const email=el('#email').value.trim(); const message=el('#message').value.trim(); if(!name||!email||!message) return; const subject = encodeURIComponent(`Portfolio contact from ${name}`); const body = encodeURIComponent(`Name: ${name}
-Email: ${email}
+    // animate skill bars on view (for index.html)
+    const bars = els('.bar div');
+    const barObserver = new IntersectionObserver((entries)=>{
+      entries.forEach(en=>{
+        if(en.isIntersecting){
+          const w = en.target.getAttribute('data-width') || '80%';
+          en.target.style.width = w;
+        }
+      });
+    }, {threshold:0.35});
+    bars.forEach(b => barObserver.observe(b));
 
-${message}`); window.location.href = `mailto:preciouscasmir04@gmail.com?subject=${subject}&body=${body}`; el('#formNote').textContent='Mail client opening — if not, use Email directly link.'; e.target.reset(); }
+    // contact form mailto fallback
+    function sendForm(e){
+      e.preventDefault();
+      const name=el('#name').value.trim();
+      const email=el('#email').value.trim();
+      const message=el('#message').value.trim();
+      if(!name||!email||!message) return;
+      const subject = encodeURIComponent(`Portfolio contact from ${name}`);
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+      window.location.href = `mailto:preciouscasmir04@gmail.com?subject=${subject}&body=${body}`;
+      el('#formNote').textContent='Mail client opening — if not, use Email directly link.';
+      e.target.reset();
+    }
     el('#contactForm') && el('#contactForm').addEventListener('submit', sendForm);
 
     // lightbox: click gallery images to open in modal-like viewer
-    els('.gallery-grid .card-img img, .card-img img').forEach(img=> img.addEventListener('click', (e)=>{
-      const src = e.currentTarget.getAttribute('src'); const viewer = document.createElement('div'); viewer.className='image-viewer'; viewer.innerHTML = `<div class="viewer-panel"><img src="${src}" alt="preview"><button class="viewer-close"><i class="fas fa-times"></i></button></div>`; document.body.appendChild(viewer); body.style.overflow='hidden'; viewer.addEventListener('click',(evt)=>{ if(evt.target.classList.contains('viewer-close')||evt.target===viewer){ viewer.remove(); body.style.overflow=''; }});
+    els('.card-img img').forEach(img=> img.addEventListener('click', (e)=>{
+      const src = e.currentTarget.getAttribute('src');
+      const viewer = document.createElement('div');
+      viewer.className='image-viewer';
+      viewer.innerHTML = `<div class="viewer-panel"><img src="${src}" alt="preview"><button class="viewer-close"><i class="fas fa-times"></i></button></div>`;
+      document.body.appendChild(viewer);
+      body.style.overflow='hidden';
+      viewer.addEventListener('click',(evt)=>{
+        if(evt.target.classList.contains('viewer-close')||evt.target===viewer){
+          viewer.remove();
+          body.style.overflow=''; }
+      });
     }));
-
   </script>
+</body>
+</html>
