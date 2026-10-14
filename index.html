@@ -1,449 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PRECIOUS AMARACHI CASMIR</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Cassey, an Information Technology graduate and software/web developer interested in human-centred technology.">
+  <meta name="theme-color" content="#5b35a8">
+  <title>Cassey | Software & Web Developer</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./css/styles-main.css">
 </head>
 <body>
-  <!-- NAV -->
-  <header class="site-nav">
-    <div class="container">
-      <div class="d-flex justify-content-between align-items-center">
-        <a class="brand d-flex align-items-center gap-3 text-decoration-none" href="#" style="color: var(--teal-700);">
-          <img src="./images/logo.png" alt="logo" class="brand-img">
-          <div class="brand-text">
-            <div class="name fw-bold">Precious Amarachi</div>
-            <div class="sub text-muted small">Frontend Developer • Designer</div>
-          </div>
-        </a>
-
-        <nav class="nav-links d-flex align-items-center gap-3">
-          <a class="text-muted text-decoration-none px-2 py-1 rounded-3 fw-semibold" href="#about">About</a>
-          <a class="text-muted text-decoration-none px-2 py-1 rounded-3 fw-semibold" href="#skills">Skills</a>
-          <a class="text-muted text-decoration-none px-2 py-1 rounded-3 fw-semibold" href="work.html">Projects</a>
-          <a class="text-muted text-decoration-none px-2 py-1 rounded-3 fw-semibold" href="https://casseyp889930254.wordpress.com/" target="_blank">Shelf</a>
-          <a class="text-muted text-decoration-none px-2 py-1 rounded-3 fw-semibold" href="#contact">Contact</a>
-          <button class="btn" id="resumeBtn" style="background: var(--accent); color: white;">Resume</button>
-        </nav>
-
-        <button class="mobile-toggle d-none border-0 bg-transparent" id="mobileToggle" style="font-size: 1.125rem; color: var(--teal-700);">
-          <i class="fas fa-bars"></i>
-        </button>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Cassey home"><span class="brand-mark">C</span><span>Cassey<span class="brand-dot">.</span></span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact" class="nav-cta">Let's connect <span aria-hidden="true">↗</span></a>
       </div>
-    </div>
+    </nav>
   </header>
 
-  <main>
-    <section class="wrap d-flex align-items-center gap-4 py-5 min-vh-75" id="home">
-      <div class="flex-grow-1 reveal" data-reveal>
-        <span class="eyebrow">Hello, I'm Precious</span>
-        <h2 class="hero-title display-4 mb-3 lh-1">I build delightful interfaces <span class="typewriter" id="tw"></span></h2>
-        <p class="lead mb-4 fw-bold">Frontend-focused web developer & designer. I craft responsive, accessible interfaces and write about what I learn. I’m available for freelance projects and full-time roles.</p>
-
-        <div class="d-flex gap-3 align-items-center mb-3">
-          <a class="btn" href="#contact" style="background: var(--accent); color: white;">Hire me</a>
-          <a class="btn btn-outline-secondary" href="./others/Precious_Amarachi_Casmir_Resume.pdf" target="_blank">Resume</a>
-        </div>
-
-        <div class="d-flex gap-3 align-items-center">
-          <a href="https://linkedin.com/in/precious-casmir" target="_blank" aria-label="LinkedIn" class="social-icon">
-            <i class="fab fa-linkedin fa-lg"></i>
-          </a>
-          <a href="https://x.com/_casseyp" target="_blank" aria-label="Twitter/X" class="social-icon">
-            <i class="fab fa-x-twitter fa-lg"></i>
-          </a>
-          <a href="https://casseyp889930254.wordpress.com/" target="_blank" aria-label="Blog" class="social-icon">
-            <i class="fas fa-book fa-lg"></i>
-          </a>
-        </div>
-      </div>
-
-      <aside class="flex-shrink-0 reveal" data-reveal>
-        <div class="profile-card">
-          <img src="./images/bg_1.jpg" alt="Precious -profile" class="profile-img">
-          <div class="profile-name">Precious Amarachi</div>
-          <div class="profile-role">Frontend Developer · WordPress · Designer</div>
-          <div class="availability">Available • Remote</div>
-        </div>
-      </aside>
-    </section>
-
-    <section class="wrap py-5 reveal" data-reveal id="about">
-      <div class="d-flex justify-content-between align-items-end mb-4">
-        <h3 class="h2 mb-0">About</h3>
-        <div class="text-muted">A short story of who I am</div>
-      </div>
-      <div class="row">
-        <div class="col-lg-8">
-          <p>I’m Precious -a frontend-focused web developer who loves beautiful interfaces, clean code, and writing to explain what I learn. I combine design sensitivity with technical skills to build websites that feel calm, fast, and accessible.</p>
-          <p>I enjoy mentoring junior devs, writing thoughtful posts, and building projects that solve real problems. My core strengths include HTML, CSS, JavaScript, responsive UI, and WordPress site builds.</p>
-        </div>
-        <div class="col-lg-4">
-          <div class="quick-facts p-3 rounded-3">
-            <h4 class="h5 mb-3">Quick facts</h4>
-            <ul class="list-unstyled mb-3 text-muted">
-              <li class="mb-2">Based in Nigeria</li>
-              <li class="mb-2">Open to remote & freelance work</li>
-              <li class="mb-0">Writes about dev + faith on my blog</li>
-            </ul>
-            <a href="#contact" class="btn" style="background: var(--accent); color: white;">Let's talk</a>
+  <main id="main">
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> SOFTWARE DEVELOPMENT · WEB · HUMAN-CENTRED TECH</p>
+          <h1>Hi, I'm <span class="gradient-text">Cassey.</span><br> I build useful digital experiences.</h1>
+          <p class="hero-lede">I'm an Information Technology graduate and software/web developer who enjoys turning ideas into practical applications—with the people using them in mind.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="work.html">Explore my work <span aria-hidden="true">↘</span></a>
+            <a class="button button-quiet" href="#contact">Get in touch</a>
           </div>
+          <div class="hero-meta"><span>First Class · BSc Information Technology</span><span class="meta-divider">•</span><span>Nigeria</span></div>
+        </div>
+        <div class="hero-art" aria-label="Abstract purple portfolio illustration">
+          <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+          <div class="art-card card-main"><div class="window-bar"><i></i><i></i><i></i></div><div class="code-line short"></div><div class="code-line long"></div><div class="code-line medium"></div><div class="code-block"><span>&lt;/&gt;</span></div><div class="code-line long"></div><div class="code-line short"></div></div>
+          <div class="floating-chip chip-one">Thoughtful UX</div><div class="floating-chip chip-two">Build · Test · Improve</div>
+          <div class="spark spark-one">✦</div><div class="spark spark-two">✧</div>
         </div>
       </div>
     </section>
 
-    <section class="wrap py-5 reveal" data-reveal id="skills">
-      <div class="d-flex justify-content-between align-items-end mb-4">
-        <h3 class="h2 mb-0">Skills</h3>
-        <div class="text-muted">Tools & experience</div>
-      </div>
+    <section class="trust-strip"><div class="container trust-inner"><span>SOFTWARE DEVELOPMENT</span><span>WEB APPLICATIONS</span><span>HUMAN-CENTRED DESIGN</span><span>PROBLEM SOLVING</span></div></section>
 
-      <div class="row g-3">
-        <div class="col-md-6 col-lg-4">
-          <div class="skill p-3 rounded-3">
-            <h4 class="h6 mb-2">HTML/CSS/Bootstrap</h4>
-            <div class="bar"><div data-width="95%" class="progress-bar" style="width: 0%;"></div></div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="skill p-3 rounded-3">
-            <h4 class="h6 mb-2">PHP / Web development</h4>
-            <div class="bar"><div data-width="92%" class="progress-bar" style="width: 0%;"></div></div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="skill p-3 rounded-3">
-            <h4 class="h6 mb-2">JavaScript (Vanilla & DOM)</h4>
-            <div class="bar"><div data-width="86%" class="progress-bar" style="width: 0%;"></div></div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="skill p-3 rounded-3">
-            <h4 class="h6 mb-2">WordPress / Theme Builds</h4>
-            <div class="bar"><div data-width="82%" class="progress-bar" style="width: 0%;"></div></div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="skill p-3 rounded-3">
-            <h4 class="h6 mb-2">Design & Figma / Graphics</h4>
-            <div class="bar"><div data-width="78%" class="progress-bar" style="width: 0%;"></div></div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="skill p-3 rounded-3">
-            <h4 class="h6 mb-2">Git / Collaboration</h4>
-            <div class="bar"><div data-width="84%" class="progress-bar" style="width: 0%;"></div></div>
-          </div>
-        </div>
-
-        <div class="col-12">
-          <div class="skill p-3 rounded-3">
-            <h4 class="h6 mb-2">AI-Assisted Coding (Vibe Coding)</h4>
-            <div class="bar"><div data-width="90%" class="progress-bar" style="width: 0%;"></div></div>
-          </div>
-        </div>
+    <section class="section" id="about">
+      <div class="container two-col">
+        <div><p class="eyebrow">A LITTLE ABOUT ME</p><h2>Technology should work for people, not make life harder.</h2></div>
+        <div class="body-copy"><p>My journey into tech was not a straight line. I discovered software development while attending NIIT, later studied Information Technology at Greenfield University, and graduated with a First Class degree.</p><p>Building projects—especially VOTCAS, a university e-voting system—made me think beyond whether an application works. I became interested in whether people can understand it, trust it, and use it with confidence. That is why I'm especially interested in software development, Human-Computer Interaction (HCI), and human-centred technology.</p><p>I enjoy learning, building, improving, and sharing what I learn with others.</p></div>
       </div>
     </section>
 
-    <section class="wrap py-5 reveal" data-reveal>
-      <div class="d-flex justify-content-between align-items-end mb-4">
-        <h3 class="h2 mb-0">Projects</h3>
-        <div class="text-muted">A selection of recent work</div>
-      </div>
-
-      <div class="row g-4">
-        <div class="col-lg-4 col-md-6">
-          <article class="project card h-100 border-0 shadow-sm">
-            <img src="./images/votcas.jpg" alt="Project screenshot" class="card-img-top">
-            <div class="card-body d-flex flex-column">
-              <h4 class="card-title h6 mb-2">VOTCAS -Electronic Voting System</h4>
-              <p class="card-text text-muted small mb-3">Frontend + backend integration; secure session-based voting UI.</p>
-              <div class="mt-auto">
-                <div class="tags mb-3">
-                  <span class="tag badge bg-light text-success me-1">HTML</span>
-                  <span class="tag badge bg-light text-success me-1">PHP</span>
-                  <span class="tag badge bg-light text-success">MySQL</span>
-                </div>
-                <div class="btn-group">
-                  <a class="btn btn-outline-secondary btn-sm" href="https://votcas.great-site.net/" target="_blank">Live</a>
-                  <a class="btn btn-outline-secondary btn-sm" href="https://github.com/PreshCassey/votcas" target="_blank">Code</a>
-                </div>
-              </div>
-            </div>
+    <section class="section section-tint" id="projects">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">SELECTED WORK</p><h2>Projects with a purpose.</h2></div><p class="heading-note">A look at the problems I explored and the solutions I helped build.</p></div>
+        <div class="project-grid">
+          <article class="project-card project-featured">
+            <div class="project-visual votcas-visual"><div class="mock-window"><div class="mock-top"><span>VOTCAS</span><span class="mock-pill">E-VOTING</span></div><div class="mock-title">Your vote.<br><b>Your voice.</b></div><div class="mock-line"></div><div class="mock-line small"></div><div class="mock-button">Continue securely ↗</div></div><span class="visual-label">PROJECT 01</span></div>
+            <div class="project-content"><div class="project-tags"><span>PHP / Web</span><span>Final-year project</span></div><h3>VOTCAS — University E-Voting System</h3><p>A secure electronic voting system designed for university elections. I served as lead developer and designer, working on registration, identity checks, validation, and safeguards against multiple voting.</p><p class="project-insight"><b>What I learned:</b> security and functionality matter, but the voting journey also needs to be clear and understandable to students.</p><div class="project-links"><a href="https://votcas.great-site.net" target="_blank" rel="noopener noreferrer">View project ↗</a><a href="#contact">Ask me about it ↗</a></div></div>
           </article>
-        </div>
 
-        <div class="col-lg-4 col-md-6">
-          <article class="project card h-100 border-0 shadow-sm">
-            <img src="./images/alumex.png" alt="Project screenshot" class="card-img-top">
-            <div class="card-body d-flex flex-column">
-              <h4 class="card-title h6 mb-2">Alumnex -Alumni Tracer App</h4>
-              <p class="card-text text-muted small mb-3">A web app for tracking alumni, search and analytics dashboards.</p>
-              <div class="mt-auto">
-                <div class="tags mb-3">
-                  <span class="tag badge bg-light text-success me-1">HTML</span>
-                  <span class="tag badge bg-light text-success me-1">PHP</span>
-                  <span class="tag badge bg-light text-success">MySQL</span>
-                </div>
-                <div class="btn-group">
-                  <a class="btn btn-outline-secondary btn-sm" href="#" target="_blank">Demo</a>
-                  <a class="btn btn-outline-secondary btn-sm" href="https://github.com/PreshCassey/alumni_tracer_" target="_blank">Repo</a>
-                </div>
-              </div>
-            </div>
+          <article class="project-card">
+            <div class="project-visual alumex-visual"><div class="alumex-brand"><span class="alumex-symbol">A</span><span>AlumEx</span></div><div class="alumex-panels"><div class="alumex-panel"></div><div class="alumex-panel"></div><div class="alumex-panel"></div></div><div class="alumex-caption">Connect · Share · Reconnect</div><span class="visual-label">PROJECT 02</span></div>
+            <div class="project-content"><div class="project-tags"><span>PHP</span><span>MySQL</span></div><h3>AlumEx — Alumni Platform</h3><p>An alumni platform concept with profiles, messaging, and events, designed to help former students stay connected and share updates.</p><p class="project-insight"><b>Focus:</b> building useful features around the way a community connects.</p><div class="project-links"><a href="#contact">Request project details ↗</a></div></div>
           </article>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <article class="project card h-100 border-0 shadow-sm">
-            <img src="./images/careercraft.png" alt="CareerCraft AI project screenshot" class="card-img-top">
-            <div class="card-body d-flex flex-column">
-              <h4 class="card-title h6 mb-2">CareerCraft AI</h4>
-              <p class="card-text text-muted small mb-3">
-                An AI-powered career assistant that helps users plan career paths, generate job-ready documents.
-              </p>
-              <div class="mt-auto">
-                <div class="tags mb-3">
-                  <span class="tag badge bg-light text-success me-1">HTML/CSS/JS</span>
-                  <span class="tag badge bg-light text-success me-1">AI Integration</span>
-                  <span class="tag badge bg-light text-success">Lovable</span>
-                </div>
-                <div class="btn-group">
-                  <a class="btn btn-outline-secondary btn-sm" href="https://career-craft-lite.lovable.app/" target="_blank">Live</a>
-                  <a class="btn btn-outline-secondary btn-sm" href="http://github.com/PreshCassey/career-craft-lite" target="_blank">Case</a>
-                </div>
-            </div>
-          </div>
-          </article>
-        </div>
-
-        <!-- See More Button -->
-        <div class="mt-3 d-flex justify-content-center">
-          <a class="btn btn-success btn-sm px-4" href="work.html" target="_blank">
-            See More
-          </a>
-        </div>
-
-
-      </div>
-    </section>
-
-    <section class="wrap py-5 reveal" data-reveal>
-      <div class="d-flex justify-content-between align-items-end mb-4">
-        <h3 class="h2 mb-0">Writing</h3>
-        <div class="text-muted">Selected posts from my blog</div>
-      </div>
-
-      <div class="row g-3">
-        <div class="col-md-6">
-          <a class="writing-card card h-100 border-0 shadow-sm text-decoration-none" href="https://casseyp889930254.wordpress.com/" target="_blank">
-            <div class="card-body">
-              <h4 class="card-title h6 mb-2">Holy After All -Excerpt</h4>
-              <p class="card-text text-muted small">A piece from my book-in-progress exploring love, faith and growth.</p>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-6">
-          <a class="writing-card card h-100 border-0 shadow-sm text-decoration-none" href="https://casseyp889930254.wordpress.com/" target="_blank">
-            <div class="card-body">
-              <h4 class="card-title h6 mb-2">Public Speaking Challenge -Day 1</h4>
-              <p class="card-text text-muted small">Notes and reflections from a 7-day speaking challenge I completed.</p>
-            </div>
-          </a>
+          <a class="button button-primary text-center" href="work.html">Explore my work <span aria-hidden="true">↘</span></a>
         </div>
       </div>
     </section>
 
-    <section class="container py-5 reveal" data-reveal>
-      <div class="d-flex justify-content-between align-items-end mb-4">
-        <h3 class="h2 mb-0">Purpose</h3>
-        <div class="text-muted">Why I build</div>
-      </div>
-      <div class="text-center">
-        <p class="lead">
-          I build with intention to create fast, accessible, and human-centered digital experiences.
-Good design isn’t just beautiful; it’s kind. It respects people’s time, builds trust, and quietly makes life easier.
-Every project I create balances logic and empathy. crafted for clarity, dignity, and purpose.
-        </p>
+    <section class="section" id="skills">
+      <div class="container">
+        <p class="eyebrow">TOOLS I WORK WITH</p><h2>My current toolkit.</h2>
+        <p class="section-intro">I keep building my skills through projects and practical work. This list reflects technologies and areas I've worked with—not a claim that I know everything equally well.</p>
+        <div class="skill-grid">
+          <div class="skill-card"><span class="skill-icon">⌘</span><h3>Web & Front-End</h3><p>HTML · CSS · JavaScript · Angular</p></div>
+          <div class="skill-card"><span class="skill-icon">⌁</span><h3>Back-End & Data</h3><p>PHP · MySQL</p></div>
+          <div class="skill-card"><span class="skill-icon">◈</span><h3>CMS & Web Tools</h3><p>WordPress · Website updates</p></div>
+          <div class="skill-card"><span class="skill-icon">✳</span><h3>Product Thinking</h3><p>Interface design · Usability awareness · Problem solving</p></div>
+        </div>
       </div>
     </section>
 
-    <section class="container py-5 reveal" data-reveal>
-      <div class="d-flex justify-content-between align-items-end mb-4">
-        <h3 class="h2 mb-0">Contact</h3>
-        <div class="text-muted">Work with me or say hello</div>
-      </div>
-      <div class="row g-4">
-        <div class="col-lg-8">
-          <form class="contact card border-0 shadow-sm p-4" id="contactForm" onsubmit="sendForm(event)">
-            <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input id="name" name="name" class="form-control" required placeholder="Your name">
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input id="email" name="email" type="email" class="form-control" required placeholder="you@company.com">
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea id="message" name="message" class="form-control" required placeholder="Tell me about the project..." rows="5"></textarea>
-            </div>
-            <div class="d-flex gap-2">
-              <button class="btn" type="submit" style="background: var(--accent); color: white;">Send message</button>
-              <a href="mailto:preciouscasmir04@gmail.com" class="btn btn-outline-secondary">Email directly</a>
-            </div>
-            <p id="formNote" class="form-note text-muted small mt-2"></p>
-          </form>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="resume-card card border-0 shadow-sm p-3 mb-3">
-            <h4 class="card-title h6 mb-2">Resume (embedded)</h4>
-            <p class="card-text text-muted small mb-3">Preview my CV below -full PDF opens in a new tab.</p>
-            <iframe class="resume-embed w-100 border-0 rounded-2" src="./others/Precious_Amarachi_Casmir_Resume.pdf" title="Resume (PDF)" style="height: 300px;"></iframe>
-            <a class="btn btn-outline-secondary btn-sm mt-2" href="./others/Precious_Amarachi_Casmir_Resume.pdf" target="_blank">Open full PDF</a>
-          </div>
-
-          <div class="connect-card card border-0 shadow-sm p-3">
-            <h4 class="card-title h6 mb-3">Connect</h4>
-            <p class="card-text text-muted small mb-2">Email: <a href="mailto:preciouscasmir04@gmail.com">preciouscasmir04@gmail.com</a></p>
-            <p class="card-text text-muted small mb-3">WhatsApp: <a href="https://wa.me/+2348173406858" target="_blank">+234 817 340 6858</a></p>
-            <div class="d-flex gap-2">
-              <a href="https://linkedin.com/in/precious-casmir" target="_blank" aria-label="LinkedIn" class="social-icon">
-                <i class="fab fa-linkedin"></i>
-              </a>
-              <a href="https://x.com/_casseyp" target="_blank" aria-label="X" class="social-icon">
-                <i class="fab fa-x-twitter"></i>
-              </a>
-              <a href="https://casseyp889930254.wordpress.com/" target="_blank" aria-label="Blog" class="social-icon">
-                <i class="fas fa-book"></i>
-              </a>
-            </div>
-          </div>
+    <section class="section section-tint" id="experience">
+      <div class="container two-col experience-layout">
+        <div><p class="eyebrow">WHERE I'VE LEARNED</p><h2>Experience that keeps me learning.</h2><p class="body-copy">I value practical experience because it helps me connect what I know with the needs of real users and teams.</p></div>
+        <div class="timeline">
+          <article class="timeline-item"><span class="timeline-dot"></span><p class="timeline-date">2025 - 2026 · NYSC</p><h3>Bank of Agriculture — </h3><p>Support administrative record-keeping, Cashiering, document and spreadsheet tasks, and basic IT support such as computer setup and software installation.</p></article>
+          <article class="timeline-item"><span class="timeline-dot"></span><p class="timeline-date">JUNE- AUGUST 2026 · Internship</p><h3>DH Nigeria — WordPress Intern</h3><p>Supported WordPress-related work and continued developing practical website skills.</p></article>
+          <article class="timeline-item"><span class="timeline-dot"></span><p class="timeline-date">2020–2024</p><h3>Talenttic Tech Hub — Front-End Developer</h3><p>Front-end development experience supporting the creation and improvement of web interfaces.</p></article>
+          <article class="timeline-item"><span class="timeline-dot"></span><p class="timeline-date">2021 - 2025 · Education</p><h3>Greenfield University</h3><p>BSc Information Technology · First Class</p></article>
+          <article class="timeline-item"><span class="timeline-dot"></span><p class="timeline-date">2018–2021</p><h3>NIIT — MMS Software Engineering</h3><p>Early practical foundation in software development.</p></article>
         </div>
       </div>
+    </section>
+
+    <section class="section" id="approach">
+      <div class="container approach-card"><div><p class="eyebrow">HOW I THINK ABOUT BUILDING</p><h2>Not just “does it work?”<br><span class="gradient-text">But “does it help?”</span></h2></div><div class="approach-points"><p><span>01</span> Understand the problem and the people affected.</p><p><span>02</span> Build a practical solution and test the flow.</p><p><span>03</span> Learn from feedback and keep improving.</p></div></div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-card">
+        <p class="eyebrow">HAVE A PROJECT OR OPPORTUNITY?</p>
+        <h2>Let's build something useful.</h2>
+        <p>I'm open to conversations about software development, web projects, learning, and opportunities to grow.</p>
+        <div class="contact-links">
+          <a href="https://x.com/_casseyp" target="_blank" rel="noopener noreferrer">X / Twitter ↗</a>
+          <a href="https://casseyp889930254.wordpress.com/" target="_blank" rel="noopener noreferrer">My blog ↗</a>
+          <a href="https://votcas.great-site.net" target="_blank" rel="noopener noreferrer">VOTCAS ↗</a>
+          <a href="mailto:preciouscasmir04@gmail.com">Email me ↗</a>
+        </div>
     </section>
   </main>
-
-  <footer class="site-footer py-4">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <div class="d-flex align-items-center gap-3">
-            <img src="./images/logo.png" alt="logo" class="brand-img-small">
-            <div>
-              <strong>Precious Amarachi Casmir</strong>
-              <div class="text-muted small">Frontend Developer • 2025</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 text-md-end">
-          <div class="text-muted small">&copy; <span id="year"></span> Presh Cassey - Built with care • <a href="#contact" class="text-muted text-decoration-none">Contact</a></div>
-        </div>
-      </div>
-    </div>
+  <footer class="footer"><div class="container footer-inner">
+    <a class="brand" href="#home">
+      <span class="brand-mark">C</span>
+      <span>Cassey<span class="brand-dot">.</span></span>
+    </a>
+    <p>Built with curiosity and care. © <span id="year"></span> Cassey.</p>
+    <a href="#home" class="back-top">Back to top ↑</a></div>
   </footer>
-
-  <!-- RESUME MODAL -->
-  <div class="modal-backdrop" id="resumeModal" aria-hidden="true">
-    <div class="modal-panel">
-      <button class="modal-close" id="closeResume"><i class="fas fa-times"></i></button>
-      <iframe src="./others/Precious_Amarachi_Casmir_Resume.pdf" class="resume-iframe" title="Resume PDF"></iframe>
-    </div>
-  </div>
-
-  <script>
-    // small helpers
-    const el = (s) => document.querySelector(s);
-    const els = (s) => document.querySelectorAll(s);
-
-    // set year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // mobile nav toggle
-    const mobileToggle = el('#mobileToggle');
-    const navLinks = el('.nav-links');
-    mobileToggle && mobileToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
-    });
-
-    // resume modal
-    const resumeBtn = el('#resumeBtn');
-    const resumeModal = el('#resumeModal');
-    const closeResume = el('#closeResume');
-    const body = document.body;
-    function showModal(){resumeModal.classList.add('open');body.style.overflow='hidden'}
-    function hideModal(){resumeModal.classList.remove('open');body.style.overflow=''}
-    resumeBtn && resumeBtn.addEventListener('click', showModal);
-    closeResume && closeResume.addEventListener('click', hideModal);
-    resumeModal && resumeModal.addEventListener('click', (e)=>{if(e.target===resumeModal) hideModal()});
-
-    // simple typewriter (cycle through roles)
-    const roles = ['Frontend Developer','WordPress Developer','Graphic Designer','Writer'];
-    let rIdx = 0, cIdx = 0, deleting=false;
-    const tw = document.getElementById('tw');
-    function tick(){
-      const txt = roles[rIdx];
-      if(!deleting){
-        cIdx++;
-        tw.textContent = txt.slice(0,cIdx);
-      } else {
-        cIdx--;
-        tw.textContent = txt.slice(0,cIdx);
-      }
-      if(cIdx === txt.length && !deleting){
-        setTimeout(()=> deleting = true, 900);
-      } else if(cIdx === 0 && deleting){
-        deleting=false;
-        rIdx = (rIdx+1)%roles.length;
-      }
-      setTimeout(tick, deleting ? 60 : 100);
-    }
-    document.addEventListener('DOMContentLoaded', tick);
-
-    // reveal on scroll
-    const reveals = els('[data-reveal]');
-    const io = new IntersectionObserver((entries)=>{entries.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('show'); io.unobserve(en.target);} });},{threshold:0.12});
-    reveals.forEach(r=>io.observe(r));
-
-    // animate skill bars on view
-    const bars = els('.bar div');
-    const barObserver = new IntersectionObserver((entries)=>{
-      entries.forEach(en=>{
-        if(en.isIntersecting){
-          const w = en.target.getAttribute('data-width') || '80%';
-          en.target.style.width = w;
-        }
-      });
-    }, {threshold:0.35});
-    bars.forEach(b => barObserver.observe(b));
-
-    // Form sending: mailto fallback
-    function sendForm(e){
-      e.preventDefault();
-      const name = el('#name').value.trim();
-      const email = el('#email').value.trim();
-      const message = el('#message').value.trim();
-      if(!name||!email||!message) return;
-      const subject = encodeURIComponent(`Portfolio contact from ${name}`);
-      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
-      window.location.href = `mailto:preciouscasmir04@gmail.com?subject=${subject}&body=${body}`;
-      el('#formNote').textContent = 'Mail client opening -if not, use Email directly link.';
-      e.target.reset();
-    }
-    el('#contactForm') && el('#contactForm').addEventListener('submit', sendForm);
-  </script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
